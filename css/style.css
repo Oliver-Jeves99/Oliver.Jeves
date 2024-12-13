@@ -1,11 +1,17 @@
 
 #skills img {
-    width: 150px;        
-    height: 150px;       
-    object-fit: cover;   
-    border-radius: 0%;  
-    background-color: #f8f9fa; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#skills img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
 
 body {
@@ -33,5 +39,45 @@ footer {
 }
 
 #skills .row {
+    margin-bottom: 30px;
+}
+
+
+#dataviz img {
+    width: 150px;        
+    height: 150px;       
+    object-fit: cover;   
+    border-radius: 50%;  
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#dataviz img:hover {
+    transform: scale(1.1);   
+    filter: brightness(1.2);  
+}
+
+#dataviz .row {
+    margin-bottom: 30px;
+}
+
+
+#python-skills img {
+    width: 150px;        
+    height: 150px;       
+    object-fit: cover;   
+    border-radius: 50%; 
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+#python-skills img:hover {
+    transform: scale(1.1);   
+    filter: brightness(1.2);  
+}
+
+#python-skills .row {
     margin-bottom: 30px;
 }

@@ -4,60 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- Bootstrap and Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0; /* Reduced padding at the top */
+        }
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.25em;
+        }
+        section {
+            margin-top: 20px; /* Reduced space between sections */
+        }
+        .section-title {
+            font-size: 2em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .btn-primary {
+            background-color: #2980b9;
+            border-color: #2980b9;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+        .skill-card {
+            border: 2px solid #ecf0f1;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .skill-card img {
+            max-width: 150px;
+            transition: transform 0.3s ease;
+        }
+        .skill-card img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #ecf0f1;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+        /* Navigation Bar */
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #3498db;
+        }
+
+        /* Reduced gap between sections */
+        .container p {
+            margin-bottom: 0; /* Remove bottom margin */
+        }
+        #skills {
+            margin-top: 15px; /* Reduced the gap between the paragraph and skills even further */
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-dark text-white text-center p-4">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">My CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="website.html">This Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-future.html">My Future</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center">
         <h1>Welcome to My Portfolio</h1>
         <p>Data Analyst | Problem Solver | Storyteller</p>
     </header>
 
-    <section id="skills" class="container mt-5">
-        <h2 class="text-center mb-4">My Skills</h2>
+    <section class="container">
+        <p class="text-center">
+            This website was a project of its own, coded entirely with HTML and CSS. More can be found in the "This Website" Section. Below, you'll find some of my data-related skills and projects. I really enjoyed coding Rock-Paper-Scissors in Python, give it a try!
+        </p>
+    </section>
+
+    <section id="skills" class="container mt-3">
+        <h2 class="text-center section-title mb-4">My Skills</h2>
 
         <!-- SQL Skill -->
         <div class="row mb-4">
-            <div class="col-md-4 text-center">
+            <div class="col-md-4 text-center skill-card">
                 <a href="sql.html">
-                    <img src="Images/SQLIMG.png" class="img-fluid rounded-circle" alt="SQL Icon" style="max-width: 150px;">
+                    <img src="Images/SQLIMG.png" class="img-fluid rounded-circle" alt="SQL Icon">
                 </a>
-            </div>
-            <div class="col-md-8">
                 <h3><a href="sql.html" class="text-decoration-none">SQL</a></h3>
                 <p>Click to explore projects and achievements showcasing my SQL skills.</p>
             </div>
-        </div>
 
-        <!-- Data Visualization Skill -->
-        <div class="row mb-4">
-            <div class="col-md-4 text-center">
+            <!-- Data Visualization Skill -->
+            <div class="col-md-4 text-center skill-card">
                 <a href="dataviz.html">
-                    <img src="Images/TableauIMG.png" class="img-fluid rounded-circle" alt="Data Visualization Icon" style="max-width: 150px;">
+                    <img src="Images/TableauIMG.png" class="img-fluid rounded-circle" alt="Data Visualization Icon">
                 </a>
-            </div>
-            <div class="col-md-8">
                 <h3><a href="dataviz.html" class="text-decoration-none">Data Visualization</a></h3>
                 <p>Click to view dashboards and visualizations I’ve created.</p>
             </div>
-        </div>
 
-        <!-- Python Skill -->
-        <div class="row mb-4">
-            <div class="col-md-4 text-center">
+            <!-- Python Skill -->
+            <div class="col-md-4 text-center skill-card">
                 <a href="python.html">
-                    <img src="Images/PythonIMG.png" class="img-fluid rounded-circle" alt="Python Icon" style="max-width: 150px;">
+                    <img src="Images/PythonIMG.png" class="img-fluid rounded-circle" alt="Python Icon">
                 </a>
-            </div>
-            <div class="col-md-8">
                 <h3><a href="python.html" class="text-decoration-none">Python</a></h3>
                 <p>Click to see Python projects, including automation and other personal projects.</p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-light text-center p-2">
-        <p>© 2024 Oliver Jeves. All rights reserved.</p>
+    <footer class="text-center">
+        <p>© 2024 Oliver Jeves. All rights reserved. | <a href="https://github.com/Oliver-Jeves99" target="_blank">GitHub</a></p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

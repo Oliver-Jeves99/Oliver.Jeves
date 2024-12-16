@@ -81,3 +81,22 @@ footer {
 #python-skills .row {
     margin-bottom: 30px;
 }
+
+#sql-skills img {
+    width: 150px;        
+    height: 150px;       
+    object-fit: cover;   
+    border-radius: 50%; 
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+#sql-skills img:hover {
+    transform: scale(1.1);   
+    filter: brightness(1.2);  
+}
+
+#sql-skills .row {
+    margin-bottom: 30px;
+}

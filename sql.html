@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">My CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="website.html">This Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-future.html">My Future</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <header class="bg-dark text-white text-center p-4">
         <h1>SQL Skills</h1>
         <p>Projects and achievements showcasing my SQL expertise.</p>
@@ -16,7 +41,7 @@
     <section id="sql-skills" class="container mt-5">
         <h2 class="text-center mb-4">SQL Projects</h2>
 
-        <!-- Murder Mystery Project -->
+        <!-- SQL Projects -->
         <div class="row mb-4">
             <div class="col-md-4 text-center">
                 <a href="https://github.com/Oliver-Jeves99/SQL-Murder-Mystery" target="_blank">
@@ -27,27 +52,52 @@
                 <h3>Murder Mystery</h3>
                 <p>This is a perfect task to learn how to use all aspects of SQL and something I think everyone should try!</p>
                 <p><strong>Link to the original:</strong> <a href="https://mystery.knightlab.com/" target="_blank">https://mystery.knightlab.com/</a></p>
-                <a href="https://github.com/Oliver-Jeves99/SQL-Murder-Mystery" class="btn btn-primary">View My Code</a>
+                <a href="https://github.com/Oliver-Jeves99/SQL-Murder-Mystery" class="btn btn-primary" target="_blank">View My Code</a>
             </div>
         </div>
 
-        <!-- Another Example -->
+        <!-- Placeholder -->
         <div class="row mb-4">
             <div class="col-md-4 text-center">
-                <a href="https://github.com/yourusername/sql-project2" target="_blank">
+                <a href="https://github.com/Oliver-Jeves99/sql-project2" target="_blank">
                     <img src="Images/sql-example2.png" class="img-fluid rounded-circle" alt="SQL Project Example">
                 </a>
             </div>
             <div class="col-md-8">
-                <h3>Advanced SQL Project</h3>
-                <p>A project that showcases advanced SQL techniques for optimizing and analyzing complex datasets.</p>
-                <a href="https://github.com/yourusername/sql-project2" class="btn btn-primary">View on GitHub</a>
+                <h3>Placeholder</h3>
+                <p>This is currently a placeholder, but another will be added soon!</p>
+                <a href="https://github.com/Oliver-Jeves99/sql-project2" class="btn btn-primary" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container mt-5">
+        <h2 class="text-center mb-4">Explore My Other Skills</h2>
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <!-- Data Visualization Skill -->
+            <div class="col-md-6 text-center skill-card mb-3">
+                <a href="dataviz.html">
+                    <img src="Images/TableauIMG.png" class="img-fluid rounded-circle" alt="Data Visualization Icon" style="max-width: 150px;">
+                </a>
+                <h3><a href="dataviz.html" class="text-decoration-none">Data Visualization</a></h3>
+                <p>Click to view dashboards and visualizations I’ve created.</p>
+            </div>
+
+            <!-- Python Skill -->
+            <div class="col-md-6 text-center skill-card mb-3">
+                <a href="python.html">
+                    <img src="Images/PythonIMG.png" class="img-fluid rounded-circle" alt="Python Icon" style="max-width: 150px;">
+                </a>
+                <h3><a href="python.html" class="text-decoration-none">Python</a></h3>
+                <p>Click to see Python projects, including automation and other personal projects.</p>
             </div>
         </div>
     </section>
 
     <footer class="bg-light text-center p-2">
-        <p>© 2024 Your Name. All rights reserved.</p>
+        <p>© 2024 Oliver Jeves. All rights reserved. | <a href="https://github.com/Oliver-Jeves99" target="_blank">GitHub</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
